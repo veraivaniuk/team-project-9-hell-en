@@ -1,0 +1,77 @@
+.footer-registration {
+    background-color: #C4C4C4;
+    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+}
+
+.registration {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-addr {
+    text-align: center;  
+}
+
+.address {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.registration-tittle {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.registration-description {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.registration-form {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field-footer {
+    padding-left: 28px;
+    min-width: 280px;
+    height: 48px;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.footer-item {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.btn-submit {
+    min-width: 260px;
+    height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: #FF6B09;
+    color: #ffffff;
+    border: 0;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.copyright {
+    background-color: #111518;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
