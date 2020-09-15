@@ -9,7 +9,41 @@
     <h1>наш первый проект</h1>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/example.html"></include>
-
+    <footer>
+      <section class="section footer">
+        <div class="container">
+          <div class="container registration">
+            <h2 class="registration-tittle">Регистрация на бесплатную телефонную консультацию по нюансам ЗНО по английскому языку</h2>
+            <h3>Оставь заявку на участие в бесплатном занятии. С вами свяжется консультант и ответит на вопросы</h3>
+            <form class="registration-form">
+              <input class="name-field" id="name" type="text" placeholder="Имя*">
+              <input class="phone-field" id="phone" type="tel" placeholder="Телефон*">
+            </form>
+            <button type="submit">хочу на бесплатное занятие</button>
+          </div>
+          <address>
+            <ul>
+              <li>
+                <svg class="" width="128px" height="45px">
+                  <use href="./images/icons/sprite.svg#icon-logo"></use>
+              </svg>
+              </li>
+              <li>
+                <a href="tel:380000000000" class="">+38 (000) 000 00 00</a>
+              </li>
+              <li>
+                <a class="" href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                  <svg class="" width="40px" height="40px">
+                      <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+              </a>
+              </li>
+            </ul>
+          </address>
+          <span>@ Все права защищены, 2019</span>
+        </div>
+      </section>
+  </footer>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
