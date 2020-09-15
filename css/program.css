@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.program-section {
+  padding: 50px 20px;
+  background-color: #111518;
+}
+
+@media screen and (min-width: 768px) {
+  .program-section {
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (min-width: 1314px) {
+  .program-section {
+    width: 1314px;
+  }
+}
+
+.program-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 320px) {
+  .program-container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .program-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1314px) {
+  .program-container {
+    width: 1314px;
+  }
+}
+
+.program {
+  list-style: none;
+}
+
+@media screen and (min-width: 1314px) {
+  .program {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.program-heading {
+  text-align: center;
+  padding-bottom: 43px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .program-heading {
+    text-align: left;
+  }
+}
+
+.program-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.program-paragraph {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.08em;
+  color: #ff6b09;
+}
+
+.description-list {
+  list-style: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: #b9b9b9;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=program.css.map */
