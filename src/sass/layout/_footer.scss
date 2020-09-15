@@ -1,6 +1,10 @@
 .footer-registration {
+    background-image: url(../images/footer/footer.png), url(../images/footer/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: #C4C4C4;
-    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04); 
 }
 
 .registration {
@@ -14,6 +18,8 @@
 }
 
 .contacts {
+    background-color: #FFFFFF;
+    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -21,11 +27,23 @@
 .registration-tittle {
     margin: 0;
     margin-bottom: 30px;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 136%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 .registration-description {
     margin: 0;
     margin-bottom: 30px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
 }
 
 .registration-form {
@@ -41,9 +59,23 @@
     padding-left: 28px;
     min-width: 280px;
     height: 48px;
-    &:not(:last-child) {
+    background: transparent;
+    border: 1px solid #FFFFFF;
+       &:not(:last-child) {
         margin-bottom: 20px;
     }
+    &::placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.214;
+        color: #FFFFFF;
+    }
+        &:hover,
+        &:focus {
+            border-radius: 2px;
+        }
 }
 
 .footer-item {
@@ -52,26 +84,62 @@
     }
 }
 
+.icon-instagram {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+}
+
 .btn-submit {
     min-width: 260px;
     height: 48px;
     text-align: center;
     text-transform: uppercase;
+    font-family: Montserrat;
     font-weight: 700;
     font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
     background-color: #FF6B09;
     color: #ffffff;
     border: 0;
 }
 
-.logo {
-    font-size: 25px;
-}
-
 .copyright {
     background-color: #111518;
-    color: #ffffff;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    color: #B9B9B9;
+}
+
+.color-accent-text {
+    color: #FF6B09;
+}
+
+.phone-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: end;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #111518;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.08em;
+
+        &:hover,
+        &:focus {
+            color: #FF6B09;
+        }
+}
+
+.icon-phone {
+    fill: #FF6B09;
+    margin-right: 10px;
 }
