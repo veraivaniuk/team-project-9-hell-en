@@ -1,0 +1,36 @@
+.teacher-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+}
+.result-work {
+  padding-top: 15px;
+  margin-bottom: 15px;
+  border-top: 1px solid $secondary-text-color;
+}
+.teacher-achievement-item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: $main-text-color;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+.about-teacher {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: $secondary-text-color;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+.certificate-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: $accent-color;
+}
