@@ -1,0 +1,50 @@
+.container-reviews {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.review-person {
+  display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.reviews-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  color: #3d3d3d;
+}
+
+.reviews-list {
+  display: flex;
+}
+
+.subtitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  /* identical to box height */
+
+  letter-spacing: 0.08em;
+
+  color: #ff6b09;
+}
+
+.second-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+
+  color: #b9b9b9;
+}
