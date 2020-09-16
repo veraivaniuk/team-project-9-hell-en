@@ -1,0 +1,44 @@
+.title {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #111518;
+}
+
+.title-white {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.title-hero {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #111518;
+}
+
+.title-label {
+  display: inline-flex;
+  // align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+  margin: 0 0 10px;
+}
+
+.title-label:before {
+  content: ' ';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  margin-right: 20px;
+  margin-top: 7px;
+}

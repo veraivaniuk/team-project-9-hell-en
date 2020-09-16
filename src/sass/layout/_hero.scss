@@ -1,0 +1,117 @@
+.title-hero{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 0.03em;
+color:$main-text-color;
+margin-bottom: 38px;
+}
+
+.grey-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.08em;
+    color: $secondary-text-color;
+}
+
+
+.black-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.08em;
+    color:$main-text-color;  
+}
+
+.orang-title{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+letter-spacing: 0.08em;
+color:$accent-color;
+}
+
+.free-lesson{
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+margin-top: 39px;
+margin-bottom: 60px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: $white-text-color;
+width: 260px;
+height: 48px;
+background: $accent-color;
+}
+  
+.title-icon {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: $main-text-color;
+}
+
+.conteiner-svg{
+border: 2px solid $accent-color;
+border-right: none;
+width: 60px;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+.conteiner-svg::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 10px;
+    right: 0;
+    top: -1px;
+    background-color:$accent-color;
+}
+
+.conteiner-svg::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 10px;
+    right: 0;
+    bottom: -1px;
+    background-color:$accent-color;
+}
+
+
+
+.icon-svg{
+    fill:$accent-color;
+    display: inline-flex;
+}
+
+.icon-box{
+    display: flex;
+    margin-bottom: 30px;
+}

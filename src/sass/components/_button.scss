@@ -1,0 +1,56 @@
+.button {
+  display: inline-block;
+  text-align: center;
+
+  min-width: 200px;
+  padding: 10px 32px;
+
+  border-width: 0px;
+  border-radius: 4px;
+
+  color: $white-text-color;
+  background-color: $accent-color;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1),
+    250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  color: $accent-color;
+  background-color: $background-secondary-color;
+}
+
+.button-consult {
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-cross {
+    display: none;
+  }
+
+  &.is-open .icon-cross {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+
+  /*@include for-size(tablet-landscape) {
+    display: none;
+  }*/
+}
