@@ -1,0 +1,107 @@
+.title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.training-margin {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.training-list {
+  display: block;
+}
+
+.training-item {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &:hover .training-icon,
+  &:focus .training-icon {
+    fill: $white-text-color;
+  }
+
+  &:hover h3,
+  &:focus h3 {
+    color: $white-text-color;
+  }
+
+  &:hover p,
+  &:focus p {
+    color: $white-text-color;
+  }
+}
+
+.training-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.training-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.training-icon {
+  display: inline-flex;
+  width: 45px;
+  height: 49px;
+  fill: $accent-color;
+
+  &:hover,
+  &:focus {
+    fill: $white-text-color;
+  }
+}
+
+.hyphen {
+  display: block;
+  width: 165px;
+  //height: 32px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hyphen > p {
+  color: $accent-color;
+  margin: 0;
+}
+
+.training-item > h3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: $main-text-color;
+  margin: 0;
+}
+
+.training-item > p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: $secondary-text-color;
+  margin: 0;
+}
