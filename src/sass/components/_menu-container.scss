@@ -1,0 +1,32 @@
+.menu-container {
+  align-items: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  border-bottom: 1px solid #ececec;
+  background-color: $background-white-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
+
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+    box-shadow: none;
+  }
+}
