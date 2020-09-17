@@ -42,4 +42,7 @@
   background-color: currentColor;
   /*margin-right: 20px;
   margin-top: 7px;*/
+
+  @include for-size(desktop) {
+  }
 }
