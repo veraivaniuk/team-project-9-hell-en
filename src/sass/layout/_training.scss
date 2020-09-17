@@ -66,12 +66,13 @@
 
   @include for-size(tablet-landscape) {
     width: calc((100% - 20px) / 2);
-    height: 234px;
+    height: 284px;
     padding-top: 40px;
   }
 
   @include for-size(desktop) {
     width: calc((100% - 20px * 2) / 3);
+    height: 366px;
     padding-top: 40px;
   }
 
@@ -114,10 +115,33 @@
   }
 }
 
+.training-item:nth-child(2n + 1) {
+  @include for-size(tablet-landscape) {
+    margin-right: 20px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 0;
+  }
+}
+
+.training-item:not(:nth-child(3n)) {
+  @include for-size(desktop) {
+    margin-right: 20px;
+  }
+}
+
+.training-item:nth-child(-n + 3) {
+  @include for-size(desktop) {
+    margin-bottom: 20px;
+  }
+}
+
 .training-box {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .training-icon {
@@ -153,13 +177,22 @@
 .training-item > h3 {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   letter-spacing: 0.08em;
   color: $main-text-color;
   margin: 0;
+
+  @include for-size(desktop) {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
 }
 
 .training-item > p {
@@ -172,4 +205,12 @@
   letter-spacing: 0.08em;
   color: $secondary-text-color;
   margin: 0;
+
+  @include for-size(desktop) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
 }
