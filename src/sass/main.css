@@ -351,6 +351,24 @@ img {
   padding-right: 20px;
 }
 
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1314px) {
+  .container {
+    width: 1314px;
+  }
+}
+
 .title-hero {
   font-family: Montserrat;
   font-style: normal;
@@ -839,7 +857,7 @@ img {
 
 @media screen and (min-width: 1314px) {
   .footer-registration {
-    background-image: url(../images/desktop/footer/footer.png), url(../images/desktop/background.png);
+    background-image: url(../images/desktop/footer/footer.png), url(../images/desktop/footer/background.png);
   }
 }
 
@@ -849,8 +867,24 @@ img {
   padding-bottom: 50px;
 }
 
-.footer-contacts {
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.footer-contacts .footer-item > .logo {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .contacts {
@@ -865,20 +899,58 @@ img {
   margin: 0;
   margin-bottom: 30px;
   font-weight: 800;
-  font-size: 14px;
-  line-height: 136%;
-  letter-spacing: 0.03em;
+  line-height: 130%;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .registration-tittle {
+    font-size: 14px;
+    line-height: 136%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .registration-tittle {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1314px) {
+  .registration-tittle {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
 }
 
 .registration-description {
   margin: 0;
   margin-bottom: 30px;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
   letter-spacing: 0.08em;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .registration-description {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .registration-description {
+    font-size: 14px;
+    line-height: 1.214;
+  }
+}
+
+@media screen and (min-width: 1314px) {
+  .registration-description {
+    font-size: 30px;
+    line-height: 1.233;
+    margin-bottom: 56px;
+  }
 }
 
 .registration-form {
@@ -896,11 +968,30 @@ img {
 }
 
 .input-field-footer {
-  padding-left: 28px;
-  min-width: 280px;
   height: 48px;
+  padding-left: 28px;
   background: transparent;
   border: 1px solid #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .input-field-footer {
+    min-width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .input-field-footer {
+    min-width: 390px;
+  }
+}
+
+@media screen and (min-width: 1314px) {
+  .input-field-footer {
+    min-width: 390px;
+    height: 70px;
+    padding-left: 40px;
+  }
 }
 
 .input-field-footer:not(:last-child) {
@@ -909,30 +1000,64 @@ img {
 
 .input-field-footer::-webkit-input-placeholder {
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.214;
   color: #FFFFFF;
+  letter-spacing: 0.08em;
 }
 
 .input-field-footer:-ms-input-placeholder {
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.214;
   color: #FFFFFF;
+  letter-spacing: 0.08em;
 }
 
 .input-field-footer::-ms-input-placeholder {
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.214;
   color: #FFFFFF;
+  letter-spacing: 0.08em;
 }
 
 .input-field-footer::placeholder {
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.214;
   color: #FFFFFF;
+  letter-spacing: 0.08em;
+}
+
+@media screen and (max-width: 1313px) {
+  .input-field-footer::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 1.214;
+  }
+  .input-field-footer:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 1.214;
+  }
+  .input-field-footer::-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 1.214;
+  }
+  .input-field-footer::placeholder {
+    font-size: 14px;
+    line-height: 1.214;
+  }
+}
+
+@media screen and (min-width: 1314px) {
+  .input-field-footer::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .input-field-footer:-ms-input-placeholder {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .input-field-footer::-ms-input-placeholder {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .input-field-footer::placeholder {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .input-field-footer:hover, .input-field-footer:focus {
@@ -948,8 +1073,10 @@ img {
           justify-content: center;
 }
 
-.footer-item:not(:last-child) {
-  margin-bottom: 20px;
+@media screen and (max-width: 767px) {
+  .footer-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer-item .logo {
@@ -964,28 +1091,47 @@ img {
 }
 
 .btn-submit {
-  min-width: 260px;
-  height: 48px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 1.25;
   letter-spacing: 0.08em;
   background-color: #FF6B09;
   color: #FFFFFF;
   border: 0;
 }
 
+@media screen and (max-width: 1313px) {
+  .btn-submit {
+    min-width: 260px;
+    height: 48px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}
+
+@media screen and (min-width: 1314px) {
+  .btn-submit {
+    min-width: 354px;
+    height: 70px;
+    font-size: 14px;
+    line-height: 1.214;
+  }
+}
+
 .copyright {
   background-color: #111518;
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 2;
   color: #B9B9B9;
+}
+
+@media screen and (max-width: 767px) {
+  .copyright {
+    text-align: center;
+  }
 }
 
 .color-accent-text {
@@ -999,10 +1145,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #111518;
   font-weight: 600;
   font-size: 14px;

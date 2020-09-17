@@ -8,7 +8,7 @@
     }
 
     @media screen and (min-width: 1314px) {
-        background-image: url(../images/desktop/footer/footer.png), url(../images/desktop/background.png);        
+        background-image: url(../images/desktop/footer/footer.png), url(../images/desktop/footer/background.png);        
     }
     background-repeat: no-repeat;
     background-position: center;
@@ -24,7 +24,14 @@
 }
 
 .footer-contacts {
-    text-align: center;  
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    } 
+    & .footer-item > .logo {
+        flex-grow: 2;
+    }
 }
 
 .contacts {
@@ -35,21 +42,47 @@
 }
 
 .registration-tittle {
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 136%; 
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: 1314px) {
+        font-size: 46px;
+        margin-bottom: 50px;  
+    }
+
     margin: 0;
     margin-bottom: 30px;
     font-weight: 800;
-    font-size: 14px;
-    line-height: 136%;
-    letter-spacing: 0.03em;
+    line-height: 130%;
     color: $white-text-color;
 }
 
 .registration-description {
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: 1.25; 
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.214;  
+    }
+
+    @media screen and (min-width: 1314px) {
+        font-size: 30px;
+        line-height: 1.233;
+        margin-bottom: 56px;  
+    }
+
     margin: 0;
     margin-bottom: 30px;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 1.25;
     letter-spacing: 0.08em;
     color: $white-text-color;
 }
@@ -64,20 +97,38 @@
 }
 
 .input-field-footer {
-    padding-left: 28px;
-    min-width: 280px;
+    @media screen and (max-width: 767px) {
+        min-width: 280px;    
+    }
+    @media screen and (min-width: 768px) {
+        min-width: 390px;
+    }
+    @media screen and (min-width: 1314px) {
+        min-width: 390px;
+        height: 70px;
+        padding-left: 40px;
+    }
     height: 48px;
+    padding-left: 28px;
     background: transparent;
     border: 1px solid $background-white-color;
        &:not(:last-child) {
         margin-bottom: 20px;
     }
-    &::placeholder {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.214;
-        color: $white-text-color;
-    }
+        &::placeholder {
+            @media screen and (max-width: 1313px) {
+                font-size: 14px;
+                line-height: 1.214;
+            }
+
+            @media screen and (min-width: 1314px) {
+                font-size: 20px;
+                line-height: 1.2;
+            }
+            font-weight: 600;
+            color: $white-text-color;
+            letter-spacing: 0.08em;
+        }
         &:hover,
         &:focus {
             border-radius: 2px;
@@ -85,11 +136,14 @@
 }
 
 .footer-item {
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }       
+    }
+
     .logo {
         width: 84px;
         height: 30px;
@@ -103,13 +157,22 @@
 }
 
 .btn-submit {
-    min-width: 260px;
-    height: 48px;
+    @media screen and (max-width: 1313px) {
+        min-width: 260px;
+        height: 48px;
+        font-size: 12px;
+        line-height: 1.25;
+    }
+    
+    @media screen and (min-width: 1314px) {
+        min-width: 354px;
+        height: 70px;
+        font-size: 14px;
+        line-height: 1.214;
+    }
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 1.25;
     letter-spacing: 0.08em;
     background-color: $accent-color;
     color: $white-text-color;
@@ -117,8 +180,10 @@
 }
 
 .copyright {
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
     background-color: $background-black-color;
-    text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
     font-weight: 500;
@@ -134,8 +199,7 @@
 .phone-link {
     display: inline-flex;
     justify-content: center;
-    align-items: end;
-    text-decoration: none;
+    align-items: center;
     color: $main-text-color;
     font-weight: 600;
     font-size: 14px;
