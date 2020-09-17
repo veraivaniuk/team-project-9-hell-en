@@ -1,5 +1,15 @@
 .footer-registration {
-    background-image: url(../images/footer/footer.png), url(../images/footer/background.png);
+    @media screen and (max-width: 767px) {
+        background-image: url(../images/mobile/footer/footer.png), url(../images/mobile/footer/background.png);  
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/tablet/footer/footer.png), url(../images/tablet/footer/background.png);        
+    }
+
+    @media screen and (min-width: 1314px) {
+        background-image: url(../images/desktop/footer/footer.png), url(../images/desktop/background.png);        
+    }
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,7 +28,7 @@
 }
 
 .contacts {
-    background-color: #FFFFFF;
+    background-color: $background-white-color;
     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
     padding-top: 50px;
     padding-bottom: 50px;
@@ -27,23 +37,21 @@
 .registration-tittle {
     margin: 0;
     margin-bottom: 30px;
-    font-family: Montserrat;
     font-weight: 800;
     font-size: 14px;
     line-height: 136%;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: $white-text-color;
 }
 
 .registration-description {
     margin: 0;
     margin-bottom: 30px;
-    font-family: Montserrat;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.08em;
-    color: #FFFFFF;
+    color: $white-text-color;
 }
 
 .registration-form {
@@ -60,17 +68,15 @@
     min-width: 280px;
     height: 48px;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $background-white-color;
        &:not(:last-child) {
         margin-bottom: 20px;
     }
     &::placeholder {
-        font-family: Montserrat;
-        font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 1.214;
-        color: #FFFFFF;
+        color: $white-text-color;
     }
         &:hover,
         &:focus {
@@ -81,6 +87,12 @@
 .footer-item {
     &:not(:last-child) {
         margin-bottom: 20px;
+    }
+    display: flex;
+    justify-content: center;
+    .logo {
+        width: 84px;
+        height: 30px;
     }
 }
 
@@ -95,30 +107,28 @@
     height: 48px;
     text-align: center;
     text-transform: uppercase;
-    font-family: Montserrat;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.08em;
-    background-color: #FF6B09;
-    color: #ffffff;
+    background-color: $accent-color;
+    color: $white-text-color;
     border: 0;
 }
 
 .copyright {
-    background-color: #111518;
+    background-color: $background-black-color;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    font-family: Montserrat;
     font-weight: 500;
     font-size: 14px;
     line-height: 2;
-    color: #B9B9B9;
+    color: $secondary-text-color;
 }
 
 .color-accent-text {
-    color: #FF6B09;
+    color: $accent-color;
 }
 
 .phone-link {
@@ -126,8 +136,7 @@
     justify-content: center;
     align-items: end;
     text-decoration: none;
-    font-family: Montserrat;
-    color: #111518;
+    color: $main-text-color;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.214;
@@ -135,11 +144,11 @@
 
         &:hover,
         &:focus {
-            color: #FF6B09;
+            color: $accent-color;
         }
 }
 
 .icon-phone {
-    fill: #FF6B09;
+    fill: $accent-color;
     margin-right: 10px;
 }
