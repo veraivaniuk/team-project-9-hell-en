@@ -38,11 +38,20 @@
 }
 
 .footer-contacts {
+    @include for-size(mobile-only){
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+    }
     @include for-size(tablet-landscape) {
         display: flex;
         align-items: center;
         justify-content: space-between;
     } 
+    @include for-size(desktop) {
+        display: flex;
+        order: 2;
+    }
 }
 
 .contacts {
@@ -149,25 +158,43 @@
         }
 }
 
-.footer-item {
-    display: flex;
-    justify-content: center;
+.footer-logo-box {
     @include for-size(mobile-only) {
-        &:not(:last-child) {
-            margin-bottom: 20px;
-        }       
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 20px;
     }
 
-    .logo {
-        width: 84px;
-        height: 30px;
+    &.logo {
+        @include for-size(mobile-only) {
+            width: 84px;
+            height: 30px;
+        }
+        @include for-size(tablet-landscape) {
+            width: 128px;
+            height: 45px;
+        }
+    }
+}
+
+.footer-item {
+    @include for-size(mobile-only) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include for-size(tablet-landscape) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }
 
 .icon-instagram {
     width: 40px;
-    height: 40px;   
+    height: 40px;  
 }
 
 .btn-submit {
@@ -213,7 +240,7 @@
 .phone-link {
     display: inline-flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     color: $main-text-color;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -235,15 +262,6 @@
         &:hover,
         &:focus {
             color: $accent-color;
-        }
-
-        @include for-size(tablet-landscape) {
-            &::after {
-                content: "";
-                border: 1px solid #B9B9B9;
-                height: 100%;
-                margin-left: 24px;
-            }
         }
 }
 
@@ -267,3 +285,33 @@
     }
 }
 
+.phone-box {
+    @include for-size(mobile-only) {
+        margin-bottom: 20px;
+    }
+    @include for-size(tablet-landscape) {
+        margin-right: 24px;
+    }
+}
+
+.phone-box,
+.instagram-box {
+    @include for-size(mobile-only) {
+    display: inline-flex;
+    justify-content: center;
+    }
+}
+
+.instagram-link {
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    @include for-size(tablet-landscape) {
+        &::before {
+            content: "";
+            border-right: 1px solid $secondary-text-color;
+            height: 100%;
+            margin-right: 24px;
+        }
+    }
+}
