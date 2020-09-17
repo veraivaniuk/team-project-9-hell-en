@@ -1,13 +1,13 @@
 .footer-registration {
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile-only) {
         background-image: url(../images/mobile/footer/footer.png), url(../images/mobile/footer/background.png);  
     }
 
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet-landscape) {
         background-image: url(../images/tablet/footer/footer.png), url(../images/tablet/footer/background.png);        
     }
 
-    @media screen and (min-width: 1316px) {
+    @include for-size(desktop) {
         background-image: url(../images/desktop/footer/footer.png), url(../images/desktop/footer/background.png);        
     }
     background-repeat: no-repeat;
@@ -19,53 +19,49 @@
 
 .registration {
     text-align: center;
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile-only) {
         padding-bottom: 50px;
     }
 
-    @media screen and (max-width: 1315px) {
+    @include for-size(tablet-only) {
         padding-top: 50px;
     }
     
-    @media screen and (min-width: 768px) and (max-width: 1315px) {
+    @include for-size(tablet-landscape) {
         padding-bottom: 70px;
     }
 
-    @media screen and (min-width: 1316px) {
+    @include for-size(desktop) {
         padding-top: 100px;
         padding-bottom: 60px;
     }
 }
 
 .footer-contacts {
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet-landscape) {
         display: flex;
         align-items: center;
         justify-content: space-between;
     } 
-    & .footer-item > .logo {
-        flex-grow: 2;
-    }
 }
 
 .contacts {
-    background-color: $background-white-color;
     box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .registration-tittle {
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile-only) {
         font-size: 14px;
         line-height: 136%; 
     }
 
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet-landscape) {
         font-size: 26px;
     }
 
-    @media screen and (min-width: 1316px) {
+    @include for-size(desktop) {
         font-size: 46px;
         margin-bottom: 50px;  
     }
@@ -78,17 +74,18 @@
 }
 
 .registration-description {
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile-only) {
         font-size: 12px;
         line-height: 1.25; 
     }
 
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet-landscape) {
+        padding: 0 120px;
         font-size: 14px;
         line-height: 1.214;  
     }
 
-    @media screen and (min-width: 1316px) {
+    @include for-size(desktop) {
         font-size: 30px;
         line-height: 1.233;
         margin-bottom: 56px;  
@@ -111,15 +108,15 @@
 }
 
 .input-field-footer {
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile-only) {
         min-width: 280px;    
     }
 
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet-landscape) {
         min-width: 390px;
     }
 
-    @media screen and (min-width: 1316px) {
+    @include for-size(desktop) {
         min-width: 390px;
         height: 70px;
         padding-left: 40px;
@@ -133,12 +130,12 @@
         margin-bottom: 20px;
     }
         &::placeholder {
-            @media screen and (max-width: 1315px) {
+            @include for-size(tablet-only) {
                 font-size: 14px;
                 line-height: 1.214;
             }
 
-            @media screen and (min-width: 1316px) {
+            @include for-size(desktop) {
                 font-size: 20px;
                 line-height: 1.2;
             }
@@ -155,7 +152,7 @@
 .footer-item {
     display: flex;
     justify-content: center;
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile-only) {
         &:not(:last-child) {
             margin-bottom: 20px;
         }       
@@ -165,23 +162,23 @@
         width: 84px;
         height: 30px;
     }
+
 }
 
 .icon-instagram {
-    margin: 0;
     width: 40px;
-    height: 40px;
+    height: 40px;   
 }
 
 .btn-submit {
-    @media screen and (max-width: 1315px) {
+    @include for-size(tablet-only) {
         min-width: 260px;
         height: 48px;
         font-size: 12px;
         line-height: 1.25;
     }
     
-    @media screen and (min-width: 1316px) {
+    @include for-size(desktop) {
         min-width: 354px;
         height: 70px;
         font-size: 14px;
@@ -197,7 +194,7 @@
 }
 
 .copyright {
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile-only) {
         text-align: center;
     }
     background-color: $background-black-color;
@@ -216,21 +213,21 @@
 .phone-link {
     display: inline-flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: end;
     color: $main-text-color;
     font-weight: 600;
     letter-spacing: 0.08em;
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile-only) {
         font-size: 14px;
         line-height: 1.214;
     }
 
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet-landscape) {
         font-size: 20px;
         line-height: 1.2;
     }
 
-    @media screen and (min-width: 1316px) {
+    @include for-size(desktop) {
         font-size: 30px;
         line-height: 1.233;
     }
@@ -239,24 +236,34 @@
         &:focus {
             color: $accent-color;
         }
+
+        @include for-size(tablet-landscape) {
+            &::after {
+                content: "";
+                border: 1px solid #B9B9B9;
+                height: 100%;
+                margin-left: 24px;
+            }
+        }
 }
 
 .icon-phone {
     fill: $accent-color;
     margin-right: 10px;
 
-    @media screen and (max-width: 767px) {
+    @include for-size(mobile-only) {
         width: 20px;
-        height: 20px;
+        height: 19px;
     }
     
-    @media screen and (min-width: 768px) {
+    @include for-size(tablet-landscape) {
         width: 24px;
-        height: 24px;
+        height: 23px;
     }
 
-    @media screen and (min-width: 1316px) {
+    @include for-size(desktop) {
         width: 30px;
-        height: 30px;
+        height: 28px;
     }
 }
+
