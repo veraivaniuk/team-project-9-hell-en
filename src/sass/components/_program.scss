@@ -47,21 +47,22 @@
 
   color: #ffffff;
 }
+
 .program.list {
   &:not(:last-child) {
     margin-bottom: 40px;
   }
+}
+
+.program-block {
   @media screen and (min-width: 768px) {
+    display: flex;
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 }
-.program-block {
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-}
+
 
 .program-paragraph {
   margin-bottom: 5px;
