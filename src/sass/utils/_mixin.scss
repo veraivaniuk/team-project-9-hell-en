@@ -1,13 +1,9 @@
 @mixin for-size($range) {
-  $mobile: 480px;
+  $mobile: 320px;
   $tablet: 768px;
-  $desktop: 1680px;
+  $desktop: 1316px;
 
   @if $range == phone-only {
-    @media (min-width: #{$mobile - 1}) {
-      @content;
-    }
-  } @else if $range == mobile-mini {
     @media (max-width: #{$mobile - 1}) {
       @content;
     }
@@ -16,7 +12,7 @@
       @content;
     }
   } @else if $range == mobile-only {
-    @media (max-width: #{$tablet - 1}) {
+    @media (min-width: #{$tablet - 1}) {
       @content;
     }
   } @else if $range == tablet-landscape {
@@ -35,5 +31,6 @@
 }
 
 //  @include for-size(desktop) {
-//     padding: 20px;
-//   }
+//    padding: 20px;
+//  }
+
