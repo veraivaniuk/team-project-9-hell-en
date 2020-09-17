@@ -62,7 +62,7 @@
 
   color: #ffffff;
 }
-.program::before {
+/*.program::before {
   position: absolute;
   content: "";
   width: 1282px;
@@ -70,7 +70,7 @@
   left: 94px;
   border: 1px solid #ffffff;
   transform: rotate(90deg);
-}
+}*/
 .program-block {
   @media screen and (min-width: 768px) {
     display: flex;
