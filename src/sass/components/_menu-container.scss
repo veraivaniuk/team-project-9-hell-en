@@ -13,6 +13,7 @@
 }
 
 .menu-button {
+  z-index: 101;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -21,22 +22,30 @@
 
   & .icon-cross {
     display: none;
+    /*fill: #fff;*/
+  }
+  & .icon-cross {
+    fill: #fff;
   }
 
   /*&.is-open .icon-cross {
-    position: absolute;
-    top: 38px;
-    right: 20px;
-    display: block;
     fill: #fff;
   }*/
 
   &.is-open .icon-menu {
     display: none;
   }
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+  }
+
+  @media (min-width: 1316px) {
+    display: none;
+  }
 }
 
 .menu-container {
+  z-index: 100;
   display: none;
   position: absolute;
   top: 0;
@@ -107,6 +116,13 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    padding-top: 30px;
+  }
+  @media (min-width: 1316px) {
+    display: none;
+  }
 }
 
 .icon-cross {
