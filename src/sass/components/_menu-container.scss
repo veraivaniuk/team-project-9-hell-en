@@ -1,23 +1,76 @@
-.menu-container {
-  align-items: center;
-  background-color: $background-white-color;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-    0px 1px 3px rgba(0, 0, 0, 0.16);
+.site-nav {
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
 
-  @media screen and (max-width: 767px) {
+.logo-img {
+  width: 80px;
+  @include for-size(tablet-landscape) {
+    width: 128px;
+  }
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-cross {
     display: none;
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 0;
-    width: 100%;
+  }
 
-    &.is-open {
+  /*&.is-open .icon-cross {
+    position: absolute;
+    top: 38px;
+    right: 20px;
+    display: block;
+    fill: #fff;
+  }*/
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 32px;
+  padding-right: 20px;
+  background: rgba(17, 21, 24, 0.9);
+
+  &.is-open {
+    display: block;
+
+    @include for-size(tablet-landscape) {
+      display: flex;
+      flex-grow: 1;
+
+      padding-bottom: 0px;
+      padding-top: 0px;
+
+      box-shadow: none;
+    }
+
+    & + .logo-img {
+      display: none;
+    }
+    & .logo-img-white {
       display: block;
+      width: 80px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet-landscape) {
     display: flex;
     flex-grow: 1;
 
@@ -26,4 +79,36 @@
 
     box-shadow: none;
   }
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.item-nav .link {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: $white-text-color;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.is-open-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-cross {
+  /*position: absolute;
+    top: 38px;
+    right: 20px;*/
+  fill: #fff;
 }

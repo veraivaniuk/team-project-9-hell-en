@@ -12,3 +12,13 @@
     mobileMenuRef.classList.toggle('is-open');
   });
 })();
+
+/*function myFuncttion() {
+  var logo = document.getElementsByClassName("logo-img")[0];
+  var logoWhite = document.getElementsByClassName("logo-img-white")[0];
+
+  if (logoWhite.style.display === "none") {
+    
+  }
+  logo.style.display = "none"
+}*/

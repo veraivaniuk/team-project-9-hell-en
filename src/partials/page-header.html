@@ -1,57 +1,83 @@
 <!--Шапка-->
 <header class="page-header container">
-  <a href="./index.html" class="logo link">
-    <img src="./images/icons/logo.svg" alt="Логотип Адский Английский" />
-    <!--<span class="title-label" leng="en">Hell</span>
-    <img src="" alt="" />
-    <span class="" leng="en">En</span>
-    <span>Адский английский</span>-->
-  </a>
-  <div class="navigation">
-    <div class="menu-container" id="menu-container" data-menu>
-      <nav class="menu-nav">
-        <ul class="site-nav list">
-          <li class="item">
-            <a href="#aboutus" class="link">Программа обучения</a>
-          </li>
-          <li class="item">
-            <a href="./index.html" class="link current">О нас</a>
-          </li>
-          <li class="item">
-            <a href="#options" class="link hover-line">Варианты обучения</a>
-          </li>
-          <li class="item">
-            <a href="#contacts" class="link hover-line">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="button button-consult" href="#free-education">
-        Консультация по телефону
+  <div>
+    <nav class="navigation">
+      <a href="./index.html" class="logo link">
+        <img
+          class="logo-img"
+          src="./images/icons/logo-black.svg"
+          alt="Логотип Адский Английский"
+        />
       </a>
-    </div>
 
-    <button
-      type="button"
-      class="menu-button"
-      aria-expanded="false"
-      aria-controls="menu-container"
-      data-menu-button
-    >
-      <svg
-        width="24"
-        height="24"
-        fill="black"
-        aria-label="Переключатель мобильного меню"
+      <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+        onclick=""
       >
-        <use
-          class="icon-cross"
-          href="./images/icons/spritemenu.svg#icon-cross"
-        ></use>
-        <use
-          class="icon-menu"
-          href="./images/icons/spritemenu.svg#icon-menu"
-        ></use>
-      </svg>
-    </button>
+        <svg
+          width="20"
+          height="20"
+          fill="black"
+          aria-label="Переключатель мобильного меню"
+        >
+          <!--<use
+            class="icon-cross"
+            href="./images/icons/spritemenu.svg#icon-cross"
+          ></use>-->
+          <use
+            class="icon-menu"
+            href="./images/icons/spritemenu.svg#icon-menu"
+          ></use>
+        </svg>
+      </button>
+
+      <div class="menu-container" id="menu-container" data-menu>
+        <nav class="menu-nav">
+          <div class="is-open-head">
+            <a href="./index.html" class="logo link">
+              <img
+                class="logo-img-white"
+                src="./images/icons/logo-white.svg"
+                alt="Логотип Адский Английский"
+              />
+            </a>
+            <a href="./index.html">
+              <svg
+                width="20"
+                height="20"
+                fill="black"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="icon-cross"
+                  href="./images/icons/spritemenu.svg#icon-cross"
+                ></use>
+              </svg>
+            </a>
+          </div>
+          <ul class="site-nav list">
+            <li class="item-nav">
+              <a href="#aboutus" class="link">Программа обучения</a>
+            </li>
+            <li class="item-nav">
+              <a href="./index.html" class="link current">О нас</a>
+            </li>
+            <li class="item-nav">
+              <a href="#options" class="link hover-line">Варианты обучения</a>
+            </li>
+            <li class="item-nav">
+              <a href="#contacts" class="link hover-line">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="button button-consult" href="#free-education">
+          Консультация по телефону
+        </a>
+      </div>
+    </nav>
   </div>
 </header>
