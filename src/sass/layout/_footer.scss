@@ -43,14 +43,13 @@
         justify-content: center;
         flex-direction: column; 
     }
-    @include for-size(tablet-landscape) {
+    @include for-size(tablet-only) {
         display: flex;
         align-items: center;
         justify-content: space-between;
     } 
     @include for-size(desktop) {
-        display: flex;
-        order: 2;
+        display: flex;        
     }
 }
 
@@ -89,7 +88,7 @@
     }
 
     @include for-size(tablet-landscape) {
-        padding: 0 120px;
+        padding: 0 118px;
         font-size: 14px;
         line-height: 1.214;  
     }
@@ -118,19 +117,25 @@
 
 .input-field-footer {
     @include for-size(mobile-only) {
-        min-width: 280px;    
+        min-width: 280px;
+        font-size: 14px;
+        line-height: 1.214    
     }
 
     @include for-size(tablet-landscape) {
         min-width: 390px;
+        font-size: 14px;
+        line-height: 1.214 
     }
 
     @include for-size(desktop) {
-        min-width: 390px;
+        min-width: 478px;
         height: 70px;
         padding-left: 40px;
+        font-size: 20px;
+        line-height: 1.2;
     }
-
+    color: $white-text-color;
     height: 48px;
     padding-left: 28px;
     background: transparent;
@@ -155,6 +160,14 @@
         &:hover,
         &:focus {
             border-radius: 2px;
+        }
+
+        &:valid:not(:placeholder-shown) {
+            border: 1px solid green;
+        }
+
+        &:invalid:not(:placeholder-shown) {
+            border: 1px solid red;
         }
 }
 
@@ -189,6 +202,11 @@
         justify-content: center;
         align-items: center;
     }
+
+    @include for-size(desktop) {
+        flex-grow: 1;
+    }
+
 }
 
 .icon-instagram {
