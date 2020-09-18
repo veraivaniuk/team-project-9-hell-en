@@ -42,27 +42,29 @@
 .free-lesson {
   margin-top: 39px;
   margin-bottom: 60px;
+ 
 }
 
 .title-icon {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.08em;
-  color: $main-text-color;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: #111518;
+    margin-left: 10px;
+    width: 50%;
 }
 
+
+
 .conteiner-svg {
-  border: 2px solid $accent-color;
-  border-right: none;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+    border: 2px solid $accent-color;
+    border-right: none;
+    width: 60px;
+    height: 60px;
+    position: relative;
 }
 
 .conteiner-svg::after {
@@ -89,10 +91,38 @@
 
 .icon-svg {
   fill: $accent-color;
-  display: inline-flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .icon-box {
   display: flex;
   margin-bottom: 30px;
+  margin-top: 78px;
+}
+
+.flex-hero{
+ display: flex; 
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+ 
+
+
+.container-hero-fon{
+   position: relative;
+   left: 56px; 
+    
+
+}
+
+.fon{
+   position: absolute; 
+   left: 20px;
+   right: 0px;
+   top: -10px;
 }
