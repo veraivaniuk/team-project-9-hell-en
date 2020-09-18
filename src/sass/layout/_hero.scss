@@ -1,17 +1,41 @@
 .title-hero {
-  font-family: Montserrat;
-  font-style: normal;
+    @include for-size(mobile-only) {
+        font-size: 20px;
+        line-height: 27px;
+        margin-top: 50px;
+        margin-bottom: 27px;
+    }
+
+
+    @include for-size(tablet-landscape) {
+        font-size: 26px;
+        line-height: 34px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    @include for-size(desktop) {
+        font-size: 58px;
+        line-height: 75px;
+        margin-top: 125px;
+        margin-bottom: 24px; 
+    }
+
+   
+
   font-weight: 800;
-  font-size: 20px;
-  line-height: 27px;
   letter-spacing: 0.03em;
   color: $main-text-color;
-  margin-bottom: 38px;
+  
 }
 
+
+
 .grey-title {
-  font-family: Montserrat;
-  font-style: normal;
+    @include for-size(desktop) {
+        font-size: 20px;
+        line-height: 33px;  
+    } 
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
@@ -20,8 +44,21 @@
 }
 
 .black-title {
-  font-family: Montserrat;
-  font-style: normal;
+
+       
+    @include for-size(tablet-landscape){
+       width: 75%;
+    }
+    
+       
+    
+    @include for-size(desktop) {
+        font-size: 20px;
+        line-height: 33px;
+        width: 100%;
+
+    }
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
@@ -30,8 +67,11 @@
 }
 
 .orang-title {
-  font-family: Montserrat;
-  font-style: normal;
+    @include for-size(desktop) {
+        font-size: 20px;
+        line-height: 33px; 
+        
+    }
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
@@ -40,19 +80,28 @@
 }
 
 .free-lesson {
-  margin-top: 39px;
-  margin-bottom: 60px;
+  margin-top: 33px;
+  margin-bottom: 34px;
  
 }
 
 .title-icon {
-    font-family: Montserrat;
-    font-style: normal;
+    @include for-size(tablet-landscape) {
+        width: 75%; 
+    }
+    @include for-size(desktop) {
+        font-size: 20px;
+        line-height: 33px;
+        margin-top: 18px;
+        margin-left: -18px;
+    }
+
+
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.08em;
-    color: #111518;
+    color: $main-text-color;
     margin-left: 10px;
     width: 50%;
 }
@@ -60,6 +109,11 @@
 
 
 .conteiner-svg {
+    @include for-size(desktop) {
+        width: 100px;
+        height: 102px;  
+    }
+
     border: 2px solid $accent-color;
     border-right: none;
     width: 60px;
@@ -97,32 +151,80 @@
   left: 0;
   right: 0;
   margin: auto;
+  
+}
+
+.stud{
+    @include for-size(desktop) {
+    width: 50px;
+    height: 58px;
+    }
+}
+
+.mob{
+    @include for-size(desktop) {
+    width: 56px;
+    height: 57px;
+}
+}
+
+.doll{
+    @include for-size(desktop) {
+    width: 52px;
+    height: 58px ;
+    }
 }
 
 .icon-box {
   display: flex;
   margin-bottom: 30px;
-  margin-top: 78px;
+ 
 }
 
+
+
 .flex-hero{
- display: flex; 
- flex-wrap: wrap;
- justify-content: space-between;
+    @include for-size(tablet-landscape) {
+        display: flex; 
+        align-items: center;
+    }
+
+    @include for-size(desktop) {
+        display: flex; 
+        align-items: center;
+    }
+    
+ 
 }
  
 
 
 .container-hero-fon{
    position: relative;
-   left: 56px; 
+    
     
 
 }
 
 .fon{
    position: absolute; 
-   left: 20px;
+   margin-left: 56px;
+   left: 0px;
    right: 0px;
    top: -10px;
+}
+
+.fon-one{
+    margin-left: 35px; 
+
+}
+
+
+.icon-list{
+    @include for-size(tablet-landscape) {
+        display: flex; 
+    }
+
+margin-top: 75px;
+margin-bottom: 47px;
 }
