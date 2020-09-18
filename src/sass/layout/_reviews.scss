@@ -69,7 +69,6 @@
 }
 
 .review-person {
-
   @include for-size(tablet-landscape) {
     margin-right: 46px;
   }
@@ -77,7 +76,6 @@
   @include for-size(desktop) {
     margin-right: 40px;
   }
-
 }
 
 .review-photo {
@@ -169,8 +167,6 @@
   margin-top: 20px;
   margin-bottom: 50px;
   justify-content: center;
-
-  }
 
   @include for-size(tablet-landscape) {
     margin-top: 30px;
