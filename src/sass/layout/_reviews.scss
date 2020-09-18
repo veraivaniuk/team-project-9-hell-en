@@ -168,8 +168,6 @@
   margin-bottom: 50px;
   justify-content: center;
 
-  &:nth-child(n + 4) {
-    display: none;
   }
 
   @include for-size(tablet-landscape) {
