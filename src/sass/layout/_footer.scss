@@ -163,11 +163,11 @@
         }
 
         &:valid:not(:placeholder-shown) {
-            border: 1px solid green;
+            border: 1px solid #008000;
         }
 
         &:invalid:not(:placeholder-shown) {
-            border: 1px solid red;
+            border: 1px solid #ff0000;
         }
 }
 
@@ -204,7 +204,7 @@
     }
 
     @include for-size(desktop) {
-        flex-grow: 1;
+        margin-left: 250px;
     }
 
 }
