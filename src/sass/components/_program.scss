@@ -105,9 +105,11 @@
   }
   @media screen and (min-width: 1314px) {
     height: 0;
-    width: 100vw;
+    height: 0;
+    width: 99vw;
+
     top: -45px;
-    left: -180px;
+    left: -76%;
   }
 }
 .program.list::after {
