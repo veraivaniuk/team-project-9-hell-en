@@ -1,8 +1,11 @@
+.section-reviews {
+  background-color: $background-white-color;
+}
+
 .container-reviews {
-  width: 100%;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
-  background: $background-secondary-color;
   //padding-left: 15px;
   //padding-right: 15px;
 
@@ -24,7 +27,7 @@
   letter-spacing: 0.03em;
   color: $main-text-color;
   margin-bottom: 20px;
-  margin-top: 50px;
+  padding-top: 50px;
 
   @include for-size(tablet-landscape) {
     font-size: 26px;
@@ -34,7 +37,7 @@
   @include for-size(desktop) {
     font-size: 46px;
     margin-bottom: 50px;
-    margin-top: 130px;
+    padding-top: 130px;
   }
 }
 .review-block {
@@ -165,6 +168,10 @@
   margin-bottom: 50px;
   justify-content: center;
 
+  &:nth-child(n + 4) {
+    display: none;
+  }
+
   @include for-size(tablet-landscape) {
     margin-top: 30px;
   }
@@ -172,11 +179,6 @@
   @include for-size(desktop) {
     margin-top: 40px;
     margin-bottom: 130px;
-  }
-}
-.list.reviews-names .reviews-item:nth-child(n + 4) {
-  @include for-size(tablet-portrait) {
-    display: none;
   }
 }
 

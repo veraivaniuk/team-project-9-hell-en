@@ -1,3 +1,7 @@
+.section-guarantee {
+  background-color: $background-white-color;
+}
+
 .container-guarantee {
   width: 100%;
   margin-left: auto;
@@ -23,11 +27,12 @@
   letter-spacing: 0.03em;
   color: $main-text-color;
   margin-bottom: 30px;
-  margin-top: 0;
+  padding-top: 50px;
 
   @include for-size(desktop) {
     font-size: 46px;
     margin-bottom: 50px;
+    padding-top: 130px;
   }
 }
 .guarantee-item {
