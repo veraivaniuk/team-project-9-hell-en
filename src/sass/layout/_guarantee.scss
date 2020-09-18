@@ -2,32 +2,128 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+
+  @include for-size(tablet-portrait) {
+    width: 320px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 688px;
+  }
+  @include for-size(desktop) {
+    width: 1314px;
+  }
+}
+.guarantee-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+  margin-bottom: 30px;
+  margin-top: 0;
+
+  @include for-size(desktop) {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
 }
 .guarantee-item {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-  color: #3d3d3d;
-  margin-bottom: 20px;
-}
-
-.guarantee-list {
-  background-color: #f1f1f1;
-  padding-top: 50px;
-  padding-bottom: 45px;
-  padding-right: 112px;
-  padding-left: 112px;
-}
-
-.separate-text {
+  position: relative;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-  /* or 140% */
+  font-size: 12px;
+  line-height: 20px;
+  color: $additional-text-color;
+  padding-left: 28px;
 
-  color: #ff6b09;
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  @include for-size(tablet-landscape) {
+    padding-left: 32px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  @include for-size(desktop) {
+    font-size: 20px;
+    line-height: 28px;
+    padding-left: 40px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.list.guarantee-list {
+  background-color: $background-gray-color;
+  padding-top: 30px;
+  padding-bottom: 31px;
+  padding-right: 20px;
+  padding-left: 27px;
+
+  @include for-size(tablet-landscape) {
+    padding-right: 50px;
+    padding-left: 86px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 50px;
+    padding-bottom: 45px;
+    padding-right: 112px;
+    padding-left: 112px;
+  }
+
+  :before {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    left: -10px;
+    top: 0;
+    display: block;
+    width: 15px;
+    height: 20px;
+    //margin-right: 30px;
+    background-image: url('../images/icons/fire.svg');
+    background-size: contain;
+
+    @include for-size(desktop) {
+      width: 22px;
+      height: 30px;
+    }
+  }
+
+  :after {
+    position: absolute;
+    content: '';
+    left: -4px;
+    bottom: -16px;
+    display: block;
+    width: 0px;
+    height: 68px;
+    border: 1px dashed $secondary-text-color;
+
+    @include for-size(tablet-landscape) {
+      height: 30px;
+    }
+
+    @include for-size(desktop) {
+      height: 40px;
+      left: 0;
+    }
+  }
+}
+
+.guarantee-item:last-child::after {
+  display: none;
+}
+
+.accent-text {
+  color: $accent-color;
 }
