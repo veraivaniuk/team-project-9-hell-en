@@ -75,11 +75,11 @@
         margin-bottom: 50px;  
     }
 
-    margin: 0;
-    margin-bottom: 30px;
-    font-weight: 800;
-    line-height: 130%;
-    color: $white-text-color;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 800;
+  line-height: 130%;
+  color: $white-text-color;
 }
 
 .registration-description {
@@ -108,12 +108,12 @@
 }
 
 .registration-form {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 50px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-field-footer {
@@ -189,7 +189,6 @@
         justify-content: center;
         align-items: center;
     }
-
 }
 
 .icon-instagram {
@@ -234,7 +233,7 @@
 }
 
 .color-accent-text {
-    color: $accent-color;
+  color: $accent-color;
 }
 
 .phone-link {
@@ -259,10 +258,10 @@
         line-height: 1.233;
     }
 
-        &:hover,
-        &:focus {
-            color: $accent-color;
-        }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .icon-phone {
