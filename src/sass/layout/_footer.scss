@@ -177,17 +177,6 @@
         justify-content: center;
         margin-bottom: 20px;
     }
-
-    &.logo {
-        @include for-size(mobile-only) {
-            width: 84px;
-            height: 30px;
-        }
-        @include for-size(tablet-landscape) {
-            width: 128px;
-            height: 45px;
-        }
-    }
 }
 
 .footer-item {
