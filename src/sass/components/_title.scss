@@ -44,5 +44,6 @@
   margin-top: 7px;*/
 
   @include for-size(desktop) {
+    margin-top: 0;
   }
 }

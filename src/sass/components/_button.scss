@@ -76,6 +76,7 @@ button:hover {
 
   @include for-size(tablet-landscape) {
     display: flex;
+    justify-content: center;
   }
   @include for-size(desktop) {
     display: none;
