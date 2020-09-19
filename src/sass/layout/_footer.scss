@@ -109,7 +109,6 @@
 .registration-form {
   width: 100%;
   text-align: center;
-  margin-bottom: 50px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -140,7 +139,8 @@
     padding-left: 28px;
     background: transparent;
     border: 1px solid $background-white-color;
-       &:not(:last-child) {
+       
+    &:not(:last-child) {
         margin-bottom: 20px;
     }
         &::placeholder {
@@ -215,6 +215,10 @@
 }
 
 .btn-submit {
+    @include for-size(mobile-only) {
+        margin-top: 50px;
+    }
+
     @include for-size(tablet-only) {
         min-width: 260px;
         height: 48px;
@@ -223,6 +227,7 @@
     }
     
     @include for-size(desktop) {
+        margin-top: 80px;
         min-width: 354px;
         height: 70px;
         font-size: 14px;
