@@ -56,3 +56,44 @@
     background-color: $background-secondary-color;
   }
 }
+//footer button
+.btn-submit {
+  @include for-size(mobile-only) {
+      margin-top: 30px;
+  }
+
+  @include for-size(tablet-landscape) {
+    margin-top: 10px;
+}
+
+  @include for-size(tablet-only) {
+      width: 260px;
+      height: 48px;
+      font-size: 12px;
+      line-height: 1.25;
+  }
+  
+  @include for-size(desktop) {
+      margin-top: 50px;
+      width: 354px;
+      height: 70px;
+      font-size: 14px;
+      line-height: 1.214;
+  }
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background-color: $accent-color;
+  color: $white-text-color;
+  border: 1px solid $accent-color;
+
+  transition: color $time-transition-duration $timing-function-cubic,
+    background-color $time-transition-duration $timing-function-cubic;
+   
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      background-color: $background-white-color;
+    }
+}
