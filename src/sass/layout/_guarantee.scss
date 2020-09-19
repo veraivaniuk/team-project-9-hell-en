@@ -113,6 +113,10 @@
     width: 0px;
     height: 100%;
     border: 1px dashed $secondary-text-color;
+
+    @include for-size(desktop) {
+      left: 9.5px;
+    }
   }
 }
 
