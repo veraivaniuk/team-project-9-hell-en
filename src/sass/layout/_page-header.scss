@@ -2,11 +2,8 @@
   position: relative;
   padding-top: 30px;
   margin-bottom: 50px;
-
-  & .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 28px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 28px;
 }

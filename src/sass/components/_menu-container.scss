@@ -1,10 +1,3 @@
-.site-nav {
-  margin-bottom: 50px;
-  @include for-size(desktop) {
-    display: flex;
-  }
-}
-
 .logo-img {
   width: 80px;
   @include for-size(tablet-landscape) {
@@ -22,56 +15,42 @@
 
   & .icon-cross {
     display: none;
-    /*fill: #fff;*/
   }
-  & .icon-cross {
-    fill: #fff;
-  }
-
-  /*&.is-open .icon-cross {
-    fill: #fff;
-  }*/
 
   &.is-open .icon-menu {
     display: none;
   }
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet-landscape) {
     margin-left: 40px;
   }
 
-  @media (min-width: 1316px) {
+  @include for-size(desktop) {
     display: none;
   }
 }
 
 .menu-container {
-  z-index: 100;
   display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  align-items: center;
-  padding-left: 20px;
-  padding-top: 31px;
-  padding-right: 20px;
-  padding-bottom: 222px;
-  background: rgba(17, 21, 24, 0.9);
 
   &.is-open {
     display: block;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
 
-    @include for-size(tablet-landscape) {
-      display: flex;
-      flex-grow: 1;
-      padding-bottom: 0px;
-      padding-top: 0px;
-      box-shadow: none;
-    }
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 31px;
+    padding-right: 20px;
+    padding-bottom: 222px;
+    background: rgba(17, 21, 24, 0.9);
 
     & .logo-img {
       display: none;
     }
+
     & .logo-img-white {
       display: block;
       width: 80px;
@@ -82,15 +61,31 @@
     }
   }
 
-  @include for-size(tablet-landscape) {
-    flex-grow: 1;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    box-shadow: none;
-  }
-
   @include for-size(desktop) {
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/*.menu-nav {
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}*/
+
+.site-nav {
+  margin-bottom: 50px;
+  @include for-size(desktop) {
+    display: flex;
+    width: 648px;
+    height: 17px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-right: 60px;
   }
 }
 
@@ -108,6 +103,14 @@
   &:focus {
     color: $accent-color;
   }
+  @include for-size(desktop) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0em;
+    color: $secondary-text-color;
+    text-transform: uppercase;
+  }
 }
 
 .is-open-head {
@@ -119,6 +122,7 @@
   @media (min-width: 768px) {
     padding-top: 30px;
   }
+
   @media (min-width: 1316px) {
     display: none;
   }
