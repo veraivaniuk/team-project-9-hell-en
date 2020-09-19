@@ -1,38 +1,41 @@
 .footer-registration {
     @include for-size(mobile-only) {
-        background-image: linear-gradient(to right, 
-        rgba(17, 21, 24, 0.4), 
-        rgba(17, 21, 24, 0.4)), url(../images/mobile/footer/footer.png);
+        background-image: url(../images/mobile/footer/footer.png), linear-gradient(to right, 
+        rgba(17, 21, 24), 
+        rgba(17, 21, 24));
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-        background-image: 
-            url(../images/mobile/footer/footer@2x.png)  
+        background-image: url(../images/mobile/footer/footer@2x.png), linear-gradient(to right, 
+            rgba(17, 21, 24), 
+            rgba(17, 21, 24)); 
         }
     }
     
 
     @include for-size(tablet-landscape) {
-        background-image: linear-gradient(to right, 
-        rgba(17, 21, 24, 0.4), 
-        rgba(17, 21, 24, 0.4)), url(../images/tablet/footer/footer.png), url(../images/tablet/footer/background.png);        
+        background-image: url(../images/tablet/footer/footer.png), linear-gradient(to right, 
+        rgba(17, 21, 24), 
+        rgba(17, 21, 24));
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-        background-image: 
-            url(../images/tablet/footer/footer@2x.png)  
+        background-image: url(../images/tablet/footer/footer@2x.png), linear-gradient(to right, 
+            rgba(17, 21, 24), 
+            rgba(17, 21, 24));  
         }
     }
 
     @include for-size(desktop) {
-        background-image: linear-gradient(to right, 
-        rgba(17, 21, 24, 0.4), 
-        rgba(17, 21, 24, 0.4)), url(../images/desktop/footer/footer.png), url(../images/desktop/footer/background.png);        
+        background-image: url(../images/desktop/footer/footer.png), linear-gradient(to right, 
+        rgba(17, 21, 24), 
+        rgba(17, 21, 24));        
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-        background-image: 
-            url(../images/desktop/footer/footer@2x.png)  
+        background-image: url(../images/desktop/footer/footer@2x.png), linear-gradient(to right, 
+            rgba(17, 21, 24), 
+            rgba(17, 21, 24));  
         }
     }
     background-repeat: no-repeat;
