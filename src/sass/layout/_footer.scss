@@ -1,14 +1,39 @@
 .footer-registration {
     @include for-size(mobile-only) {
-        background-image: url(../images/mobile/footer/footer.png), url(../images/mobile/footer/background.png);  
+        background-image: linear-gradient(to right, 
+        rgba(17, 21, 24, 0.4), 
+        rgba(17, 21, 24, 0.4)), url(../images/mobile/footer/footer.png);
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+        background-image: 
+            url(../images/mobile/footer/footer@2x.png)  
+        }
     }
+    
 
     @include for-size(tablet-landscape) {
-        background-image: url(../images/tablet/footer/footer.png), url(../images/tablet/footer/background.png);        
+        background-image: linear-gradient(to right, 
+        rgba(17, 21, 24, 0.4), 
+        rgba(17, 21, 24, 0.4)), url(../images/tablet/footer/footer.png), url(../images/tablet/footer/background.png);        
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+        background-image: 
+            url(../images/tablet/footer/footer@2x.png)  
+        }
     }
 
     @include for-size(desktop) {
-        background-image: url(../images/desktop/footer/footer.png), url(../images/desktop/footer/background.png);        
+        background-image: linear-gradient(to right, 
+        rgba(17, 21, 24, 0.4), 
+        rgba(17, 21, 24, 0.4)), url(../images/desktop/footer/footer.png), url(../images/desktop/footer/background.png);        
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+        background-image: 
+            url(../images/desktop/footer/footer@2x.png)  
+        }
     }
     background-repeat: no-repeat;
     background-position: center;
@@ -106,71 +131,6 @@
     color: $white-text-color;
 }
 
-.registration-form {
-  width: 100%;
-  text-align: center;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.input-field-footer {
-    @include for-size(mobile-only) {
-        min-width: 280px;
-        font-size: 14px;
-        line-height: 1.214    
-    }
-
-    @include for-size(tablet-landscape) {
-        min-width: 390px;
-        font-size: 14px;
-        line-height: 1.214 
-    }
-
-    @include for-size(desktop) {
-        min-width: 478px;
-        height: 70px;
-        padding-left: 40px;
-        font-size: 20px;
-        line-height: 1.2;
-    }
-    color: $white-text-color;
-    height: 48px;
-    padding-left: 28px;
-    background: transparent;
-    border: 1px solid $background-white-color;
-       
-    &:not(:last-child) {
-        margin-bottom: 20px;
-    }
-        &::placeholder {
-            @include for-size(tablet-only) {
-                font-size: 14px;
-                line-height: 1.214;
-            }
-
-            @include for-size(desktop) {
-                font-size: 20px;
-                line-height: 1.2;
-            }
-            font-weight: 600;
-            color: $white-text-color;
-            letter-spacing: 0.08em;
-        }
-        &:hover,
-        &:focus {
-            border-radius: 2px;
-        }
-
-        &:valid:not(:placeholder-shown) {
-            border: 1px solid #008000;
-        }
-
-        &:invalid:not(:placeholder-shown) {
-            border: 1px solid #ff0000;
-        }
-}
-
 .footer-logo-box {
     @include for-size(mobile-only) {
         display: inline-flex;
@@ -203,34 +163,6 @@
     height: 40px;  
 }
 
-.btn-submit {
-    @include for-size(mobile-only) {
-        margin-top: 50px;
-    }
-
-    @include for-size(tablet-only) {
-        min-width: 260px;
-        height: 48px;
-        font-size: 12px;
-        line-height: 1.25;
-    }
-    
-    @include for-size(desktop) {
-        margin-top: 80px;
-        min-width: 354px;
-        height: 70px;
-        font-size: 14px;
-        line-height: 1.214;
-    }
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    background-color: $accent-color;
-    color: $white-text-color;
-    border: 0;
-}
-
 .copyright {
     @include for-size(mobile-only) {
         text-align: center;
@@ -255,6 +187,7 @@
     color: $main-text-color;
     font-weight: 600;
     letter-spacing: 0.08em;
+    transition: color $time-transition-duration $timing-function-cubic;
     @include for-size(mobile-only) {
         font-size: 14px;
         line-height: 1.214;
