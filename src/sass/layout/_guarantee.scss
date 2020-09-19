@@ -7,14 +7,13 @@
   margin-left: auto;
   margin-right: auto;
 
-  @include for-size(tablet-portrait) {
-    width: 320px;
-  }
   @include for-size(tablet-landscape) {
-    width: 688px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   @include for-size(desktop) {
-    width: 1314px;
+    padding-left: 183px;
+    padding-right: 183px;
   }
 }
 .guarantee-title {
@@ -43,14 +42,15 @@
   font-size: 12px;
   line-height: 20px;
   color: $additional-text-color;
-  padding-left: 28px;
+  padding-left: 40px;
+  word-wrap: break-word;
 
   &:not(:last-child) {
     margin-bottom: 23px;
   }
 
   @include for-size(tablet-landscape) {
-    padding-left: 32px;
+    padding-left: 44px;
 
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -59,7 +59,7 @@
   @include for-size(desktop) {
     font-size: 20px;
     line-height: 28px;
-    padding-left: 40px;
+    padding-left: 50px;
 
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -89,7 +89,7 @@
     position: absolute;
     z-index: 1;
     content: '';
-    left: -10px;
+    left: 0;
     top: 0;
     display: block;
     width: 15px;
@@ -107,20 +107,15 @@
   :after {
     position: absolute;
     content: '';
-    left: -4px;
-    bottom: -16px;
+    left: 6px;
+    top: 20px;
     display: block;
     width: 0px;
-    height: 68px;
+    height: 100%;
     border: 1px dashed $secondary-text-color;
 
-    @include for-size(tablet-landscape) {
-      height: 30px;
-    }
-
     @include for-size(desktop) {
-      height: 40px;
-      left: 0;
+      left: 9.5px;
     }
   }
 }
