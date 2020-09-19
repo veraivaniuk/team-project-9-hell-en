@@ -10,7 +10,7 @@
         <p class="registration-description">Оставь заявку на участие в
           <span class="color-accent-text">бесплатном занятии.</span>
         С вами свяжется консультант и ответит на вопросы</p>
-        <form class="registration-form" autocomplete="off" id="free-education">
+        <form class="registration-form" autocomplete="on" id="free-education">
           <input class="input-field-footer" name="name" id="name" type="text" placeholder="Имя*" pattern="[A-Za-zА-Яа-яЁё]{3,20}" required>
           <input class="input-field-footer" name="phone" id="phone" type="tel" placeholder="Телефон*" pattern="[0-9]{10}" required>
           <button class="btn-submit" type="submit">хочу на бесплатное занятие</button>
@@ -21,7 +21,16 @@
       <div class="container">
         <div class="footer-contacts">
           <div class="footer-logo-box">
-            <img class="logo" src="./images/icons/logo.svg" alt="Логотип">
+            <div class="logo">
+              <div class="logo-box">
+                <span class="logo-hell">Hell</span>
+                <svg class="icon-fire" width="22" height="30">
+                    <use href="./images/icons/sprite.svg#icon-fire"></use>
+                </svg>
+                <span class="logo-en">en</span>
+              </div>
+              <p class="logo-bottom-signature"><span class="logo-color-accent">Адский</span> английский</p>
+            </div>
           </div>
           <div class="footer-item">
             <div class="phone-box">
