@@ -1,3 +1,10 @@
+button,
+button:active,
+button:focus,
+button:hover {
+  outline: none;
+}
+
 .button {
   display: inline-block;
   text-align: center;
@@ -40,6 +47,10 @@
     cursor: pointer;
     color: $accent-color;
     background-color: $background-secondary-color;
+  }
+
+  @include for-size(tablet-landscape) {
+    display: none;
   }
 
   @include for-size(desktop) {
