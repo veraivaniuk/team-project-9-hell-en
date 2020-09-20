@@ -5,12 +5,37 @@
     <button class="button-arrow-left"></button>
     <div class="review-block">
       <div class="review-person">
-        <img
-          class="review-photo"
-          src="./images/desktop/Girls/tonya.jpg"
-          alt="Тоня"
-          width="150"
-        />
+        <picture class="review-photo">
+          <source
+            srcset="
+              ./images/desktop/Girls/tonya.jpg    1x,
+              ./images/desktop/Girls/tonya@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width:1316px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/Girls/tonya.jpg    1x,
+              ./images/tablet/Girls/tonya@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/Girls/tonya.jpg    1x,
+              ./images/mobile/Girls/tonya@2x.jpg 2x
+            "
+            type="image/jpeg"
+            media="(max-width:767px)"
+          />
+          <img
+            src="./images/desktop/Girls/tonya.jpg"
+            alt="Фото Тоня"
+            width="150"
+          />
+        </picture>
         <a
           href="https://vk.com/"
           class="social-icons-link"

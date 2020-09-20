@@ -170,7 +170,9 @@
 
 .icon-box {
   display: flex;
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .flex-hero {
@@ -207,5 +209,5 @@
   }
 
   margin-top: 75px;
-  margin-bottom: 47px;
+  /*margin-bottom: 47px;*/
 }

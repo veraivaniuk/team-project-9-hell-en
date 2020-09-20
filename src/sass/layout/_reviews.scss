@@ -25,7 +25,7 @@
   letter-spacing: 0.03em;
   color: $main-text-color;
   margin-bottom: 20px;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
 
   @include for-size(tablet-landscape) {
     font-size: 26px;
@@ -35,7 +35,7 @@
   @include for-size(desktop) {
     font-size: 46px;
     margin-bottom: 50px;
-    padding-top: 130px;
+    /*padding-top: 130px;*/
   }
 }
 .review-block {
@@ -88,6 +88,7 @@
 
   @include for-size(tablet-portrait) {
     margin: auto;
+    text-align: center;
   }
 }
 
@@ -163,7 +164,7 @@
 .list .reviews-names {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   justify-content: center;
 
   @include for-size(tablet-landscape) {
@@ -172,7 +173,7 @@
 
   @include for-size(desktop) {
     margin-top: 40px;
-    margin-bottom: 130px;
+    /*margin-bottom: 130px;*/
   }
 }
 
@@ -227,7 +228,7 @@
 .button-arrow-right {
   position: absolute;
   right: 0;
-  bottom: 50%;
+  top: 50%;
   background-color: transparent;
   cursor: pointer;
   background-image: url('../images/icons/SVG/arrow-right.svg');
@@ -242,7 +243,7 @@
   }
   @include for-size(tablet-only) {
     right: -3%;
-    bottom: 42%;
+    top: 50%;
   }
 
   @include for-size(desktop) {
