@@ -209,6 +209,7 @@
   top: 50%;
   left: 0;
   display: block;
+  border: none;
   background-color: transparent;
   cursor: pointer;
   background-image: url('../images/icons/SVG/arrow-left.svg');
@@ -225,7 +226,8 @@
 .button-arrow-right {
   position: absolute;
   right: 0;
-  bottom: 50%;
+  top: 50%;
+  border: none;
   background-color: transparent;
   cursor: pointer;
   background-image: url('../images/icons/SVG/arrow-right.svg');
