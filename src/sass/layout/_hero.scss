@@ -208,7 +208,9 @@
 
 .icon-box {
   display: flex;
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .flex-hero {
@@ -247,10 +249,6 @@
 
   }
 
-
-
-
-
   @include for-size(desktop) {
   margin-top: 192px;
   margin-bottom: 47px;
@@ -284,7 +282,7 @@ section.hero {
   @include for-size(mobile-only) {
   position: relative;
 }
-}
+
 
 
 .imageone{
