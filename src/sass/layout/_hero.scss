@@ -210,11 +210,20 @@
 }
 
 .icon-box {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+
+
   display: flex;
+
+  @include for-size(mobile-only) {
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+  }
 }
+
 
 .flex-hero {
   @include for-size(tablet-landscape) {
@@ -244,7 +253,7 @@
   margin-top: 50px;
 
   @include for-size(tablet-landscape) {
-    margin-top: 30px;
+    margin-top: 88px;
     display: flex;
   }
 
@@ -255,14 +264,41 @@
 }
 
 section.hero {
+  padding-top: 0;
   position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+  background-image: url(../images/mobile/hero/heromobile.png);
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  background-image: url(../images/mobile/hero/heromobile@2x.png);
+  }
+
+  @include for-size(tablet-landscape) {
+    background-position-y: 55px;
+    background-image: url(../images/desktop/hero/Vector@1x.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/hero/Vector@2x.png);
+    }
+  }
+  @include for-size(desktop) {
+    background-position-y: -118px;
+    background-image: url(../images/desktop/hero/Vector@1x.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/hero/Vector@2x.png);
+    }
+  }
 }
 
-/* 
-.container-hero {
-  margin-right: 55px;
-}
- */
 
 .container-hero-fon {
   @include for-size(mobile-only) {
@@ -273,6 +309,10 @@ section.hero {
 .imageone {
   background-repeat: no-repeat;
   background-size: contain;
+  width: 208px;
+  height: 148px;
+  display: block;
+  margin: auto;
 
   @media screen and (max-width: 767px) {
     background-image: url('../images/mobile/hero/vno-mobile@1x.png');
@@ -284,14 +324,11 @@ section.hero {
     }
   }
 
-  width: 208px;
-  height: 148px;
-  display: block;
-  margin: auto;
+ 
 
   @media screen and (min-width: 768px) {
-    width: 376px;
-    height: 269px;
+    width: 375px;
+    height: 320px;
     position: relative;
     top: 40px;
     background-image: url('../images/tablet/hero/vno-tablet@1x.png');
@@ -303,11 +340,11 @@ section.hero {
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 842px;
-    height: 602px;
+  @include for-size(desktop) {
+    width: 841px;
+    height: 718px;
     position: absolute;
-    top: 40px;
+    top: 39px;
 
     background-image: url('../images/desktop/hero/vno-desktop@1x.png');
 
