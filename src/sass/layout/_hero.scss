@@ -68,9 +68,47 @@
 }
 
 .free-lesson {
+  @include for-size(desktop) {
+    min-width: 354px;
+    min-height: 70px;
+    padding: 26px;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+    margin-top: 40px;
+
+  }
+
   margin-top: 33px;
   margin-bottom: 34px;
+  display: inline-block;
+  text-align: center;
+
+  min-width: 260px;
+  min-height: 48px;
+  padding: 17px 5px;
+
+  color: $white-text-color;
+  background-color: $accent-color;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1),
+    250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  color: $accent-color;
+  background-color: $background-secondary-color;
+}
+
 
 .title-icon {
   display: flex;
@@ -185,9 +223,7 @@
   }
 }
 
-.container-hero-fon {
-  position: relative;
-}
+
 
 .fon {
   position: absolute;
@@ -202,10 +238,206 @@
 }
 
 .icon-list {
+  margin-top: 50px;
+
+
   @include for-size(tablet-landscape) {
+    margin-top: 30px;
     display: flex;
+
   }
 
-  margin-top: 75px;
+
+
+
+
+  @include for-size(desktop) {
+  margin-top: 192px;
   margin-bottom: 47px;
+  }
+
+
+
 }
+
+
+
+/* УУДАЛИТЬ НЕАДИПТИЫНВЙ БЛОК!!!!!!!!!!!!!!!!!*/
+section.section-reviews {
+  display: none;
+}
+
+
+section.hero {
+  position: relative;
+}
+
+/* 
+.container-hero {
+  margin-right: 55px;
+}
+ */
+
+
+
+ .container-hero-fon {
+  @include for-size(mobile-only) {
+  position: relative;
+}
+}
+
+
+.imageone{
+    background-repeat: no-repeat;
+    background-size: contain;
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../images/mobile/hero/vno-mobile@1x.png");
+
+ 
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: 
+        url("../images/mobile/hero/vno-mobile@2x.png");
+    }
+
+    width: 208px;
+    height: 148px;
+    display: block;
+    margin: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 376px;
+    height: 269px;
+    position: relative;
+    top: 40px;
+    background-image: url("../images/tablet/hero/vno-tablet@1x.png");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: 
+        url("../images/tablet/hero/vno-tablet@2x.png");
+    }
+
+
+
+
+  }
+
+
+
+
+
+  @media screen and (min-width: 1200px) {
+
+    width: 842px;
+    height: 602px;
+    position: absolute;
+    top: 40px;
+
+    background-image: url("../images/desktop/hero/vno-desktop@1x.png");
+
+   
+
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: 
+        url("../images/desktop/hero/vno-desktop@2x.png");
+    }
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.imageduo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+@media screen and (max-width: 767px) {
+
+  
+  width: 208px;
+  height: 149px;
+  position: absolute;
+  top: 0;
+
+
+
+    width: 178px;
+    height: 178px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: auto;
+
+
+    background-image: 
+     url("../images/mobile/hero/VNO.png");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: 
+        url("../images/mobile/hero/VNO@2x.png");
+    }
+
+
+
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: 
+        url("../images/tablet/hero/VNO.png");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: 
+        url("../images/tablet/hero/VNO@2x.png");
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    width: 719px;
+    height: 718px;
+    position: absolute;
+    top: 0;
+    right: 74px;
+
+
+    background-image: 
+        url("../images/desktop/hero/VNO.png");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: 
+        url("../images/desktop/hero/VNO@2x.png");
+    }
+
+
+
+
+
+
+  }
+}*/ 
