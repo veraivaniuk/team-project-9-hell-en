@@ -2,11 +2,14 @@
   position: relative;
   padding-top: 30px;
   margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 28px;
+}
 
-  & .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 28px;
-  }
+.header-tablet {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

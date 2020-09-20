@@ -182,6 +182,12 @@
   &:not(:last-child) {
     margin-right: 10px;
   }
+
+  &:nth-child(n + 4) {
+    @include for-size(mobile-only) {
+      display: none;
+    }
+  }
   @include for-size(tablet-landscape) {
     &:not(:last-child) {
       margin-right: 30px;
