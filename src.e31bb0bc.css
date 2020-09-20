@@ -58,6 +58,7 @@ button:active,
 button:focus,
 button:hover {
   outline: none;
+  border: none;
 }
 
 .button {
@@ -1142,6 +1143,8 @@ button:hover {
 
 .icon-box {
   display: flex;
+}
+.icon-box:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -1176,7 +1179,7 @@ button:hover {
 
 .icon-list {
   margin-top: 75px;
-  margin-bottom: 47px;
+  /*margin-bottom: 47px;*/
 }
 @media (min-width: 768px) {
   .icon-list {
@@ -1186,28 +1189,28 @@ button:hover {
 
 .section.problems {
   position: relative;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   background: linear-gradient(#111518 78%, #ffffff 22%);
 }
 @media (min-width: 1314px) {
   .section.problems {
-    margin-bottom: 130px;
+    /*margin-bottom: 130px;*/
   }
 }
 
 .title-box {
   width: 100%;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   text-align: start;
 }
 @media (min-width: 768px) {
   .title-box {
-    padding-top: 60px;
+    /* padding-top: 60px;*/
   }
 }
 @media (min-width: 1314px) {
   .title-box {
-    padding-top: 100px;
+    /* padding-top: 100px;*/
   }
 }
 
@@ -1417,7 +1420,7 @@ button:hover {
 }
 
 .section.training {
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   background: #ffffff;
 }
 
@@ -1696,7 +1699,7 @@ button:hover {
   letter-spacing: 0.03em;
   text-align: left;
   color: #111518;
-  margin-top: 39px;
+  /*margin-top: 39px;*/
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -1711,6 +1714,7 @@ button:hover {
   .teacher {
     font-size: 46px;
     line-height: 60px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1992,7 +1996,7 @@ button:hover {
   letter-spacing: 0.03em;
   color: #111518;
   margin-bottom: 20px;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
 }
 @media (min-width: 768px) {
   .reviews-title {
@@ -2004,7 +2008,7 @@ button:hover {
   .reviews-title {
     font-size: 46px;
     margin-bottom: 50px;
-    padding-top: 130px;
+    /*padding-top: 130px;*/
   }
 }
 
@@ -2063,6 +2067,7 @@ button:hover {
 @media (min-width: 320px) {
   .review-photo {
     margin: auto;
+    text-align: center;
   }
 }
 
@@ -2144,7 +2149,7 @@ button:hover {
 .list .reviews-names {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   justify-content: center;
 }
 @media (min-width: 768px) {
@@ -2155,7 +2160,7 @@ button:hover {
 @media (min-width: 1314px) {
   .list .reviews-names {
     margin-top: 40px;
-    margin-bottom: 130px;
+    /*margin-bottom: 130px;*/
   }
 }
 
@@ -2211,7 +2216,7 @@ button:hover {
 .button-arrow-right {
   position: absolute;
   right: 0;
-  bottom: 50%;
+  top: 50%;
   background-color: transparent;
   cursor: pointer;
   background-image: url("/arrow-right.e10e490b.svg");
@@ -2229,7 +2234,7 @@ button:hover {
 @media (max-width: 1313px) {
   .button-arrow-right {
     right: -3%;
-    bottom: 42%;
+    top: 50%;
   }
 }
 @media (min-width: 1314px) {
