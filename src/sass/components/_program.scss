@@ -115,7 +115,7 @@
   @media screen and (min-width: 1314px) {
     height: 0;
     width: 100vw;
-    left: calc((1236px / 2) - 50vw);
+    left: calc((1300px / 2) - 50vw);
     top: -45px;
   }
 }
@@ -249,7 +249,7 @@
 .background-photo {
   position: absolute;
   @media screen and (min-width: 320px) {
-    bottom: 750px;
+    bottom: 690px;
     right: 0px;
   }
   @media screen and (min-width: 768px) {
@@ -266,12 +266,16 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -20px;
   }
 }
-.line-lable {
-  margin-bottom: 10px;
+.line-lable.pseudo {
+  @media screen and (min-width: 1314px) {
+    align-items: center;
+  }
 }
 .metod-item {
+  align-items: center;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
