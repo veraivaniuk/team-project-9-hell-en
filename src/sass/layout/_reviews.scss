@@ -3,18 +3,18 @@
 }
 
 .container-reviews {
-  width: 280px;
+  position: relative;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  //padding-left: 15px;
-  //padding-right: 15px;
 
   @include for-size(tablet-landscape) {
-    width: 713px;
+    margin-left: 27px;
+    margin-right: 28px;
   }
   @include for-size(desktop) {
-    display: flex;
-    width: 1258px;
+    margin-left: 210px;
+    margin-right: 212px;
   }
 }
 .reviews-title {
@@ -39,16 +39,15 @@
   }
 }
 .review-block {
-  //width: 100%;
   background: $background-white-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   display: inline-block;
-
   padding-top: 20px;
   padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   @include for-size(tablet-landscape) {
     display: flex;
@@ -56,13 +55,17 @@
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-left: 12.5px;
+    margin-right: 12.5px;
   }
   @include for-size(desktop) {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 51px;
     padding-left: 82px;
     padding-right: 112px;
+    padding-top: 50px;
+    padding-bottom: 51px;
+    margin-left: 84px;
+    margin-right: 84px;
   }
 }
 
@@ -193,31 +196,39 @@
 }
 
 .button-arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
   display: block;
-  //border: 1px solid tomato;
   background-color: transparent;
   cursor: pointer;
-  margin-right: 60px;
   background-image: url('../images/icons/SVG/arrow-left.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  border: none;
-  width: 25px;
-}
+  min-width: 25px;
+  min-height: 25px;
 
+  @include for-size(mobile-only) {
+    top: 107%;
+  }
+}
 .button-arrow-right {
-  display: block;
-  //border: 1px solid tomato;
+  position: absolute;
+  right: 0;
+  bottom: 50%;
   background-color: transparent;
   cursor: pointer;
-  margin-left: 60px;
   background-image: url('../images/icons/SVG/arrow-right.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  border: none;
-  width: 25px;
+  min-width: 25px;
+  min-height: 25px;
+
+  @include for-size(mobile-only) {
+    top: 107%;
+  }
 }
 .social-icons-link {
   display: flex;
