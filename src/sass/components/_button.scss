@@ -32,7 +32,7 @@ button:hover {
 .button:focus {
   cursor: pointer;
   color: $accent-color;
-  background-color: $background-secondary-color;
+  background-color: #fff;
 }
 
 .button-consult {
@@ -47,7 +47,7 @@ button:hover {
   &:focus {
     cursor: pointer;
     color: $accent-color;
-    background-color: $background-secondary-color;
+    background-color: #fff;
   }
 
   @include for-size(tablet-landscape) {
