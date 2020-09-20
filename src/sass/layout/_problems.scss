@@ -8,11 +8,11 @@
   );
 
   @include for-size(tablet-landscape) {
-    height: 491px;
+    //height: 491px;
   }
 
   @include for-size(desktop) {
-    height: 710px;
+    //height: 710px;
     margin-bottom: 130px;
   }
 }
