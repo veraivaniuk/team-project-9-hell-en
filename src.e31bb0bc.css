@@ -82,7 +82,7 @@ button:hover {
 .button:focus {
   cursor: pointer;
   color: #ff6b09;
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 
 .button-consult {
@@ -94,7 +94,7 @@ button:hover {
 .button-consult:hover, .button-consult:focus {
   cursor: pointer;
   color: #ff6b09;
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 @media (min-width: 768px) {
   .button-consult {
@@ -479,7 +479,7 @@ button:hover {
     padding-top: 1px;
   }
 }
-@media (min-width: 1316px) {
+@media (min-width: 1314px) {
   .is-open-head {
     display: none;
   }
@@ -932,6 +932,38 @@ button:hover {
   justify-content: space-around;
 }
 
+.hero-wave {
+  /*margin-bottom: 93px;*/
+  /*position: relative;*/
+  background-image: url(/Vector@1x.90d21cd2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*background-position-y: -290px;*/
+  background-position-x: -137px;
+  background-position-y: 23px;
+  max-width: 100%;
+  /*top: 0;
+  left: 0;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-wave {
+    background-image: url(/Vector@2x.f708fc7b.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-wave {
+    background-position-x: -67px;
+    background-position-y: 73px;
+  }
+}
+
+/*.img {
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
 .container {
   width: 100%;
   margin-left: auto;
@@ -1040,6 +1072,39 @@ button:hover {
 .free-lesson {
   margin-top: 33px;
   margin-bottom: 34px;
+  display: inline-block;
+  text-align: center;
+  min-width: 260px;
+  min-height: 48px;
+  padding: 17px 5px;
+  color: #ffffff;
+  background-color: #ff6b09;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1), 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 1314px) {
+  .free-lesson {
+    min-width: 354px;
+    min-height: 70px;
+    padding: 26px;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+    margin-top: 40px;
+    margin-bottom: 97px;
+  }
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  color: #ff6b09;
+  background-color: #ffffff;
 }
 
 .title-icon {
@@ -1161,10 +1226,6 @@ button:hover {
   }
 }
 
-.container-hero-fon {
-  position: relative;
-}
-
 .fon {
   position: absolute;
   margin-left: 56px;
@@ -1178,12 +1239,80 @@ button:hover {
 }
 
 .icon-list {
-  margin-top: 75px;
-  /*margin-bottom: 47px;*/
+  margin-top: 50px;
 }
 @media (min-width: 768px) {
   .icon-list {
+    margin-top: 30px;
     display: flex;
+  }
+}
+@media (min-width: 1314px) {
+  .icon-list {
+    margin-top: 192px;
+    margin-bottom: 47px;
+  }
+}
+
+section.hero {
+  position: relative;
+}
+
+/* 
+.container-hero {
+  margin-right: 55px;
+}
+ */
+@media (max-width: 767px) {
+  .container-hero-fon {
+    position: relative;
+  }
+}
+
+.imageone {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 208px;
+  height: 148px;
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .imageone {
+    background-image: url("/vno-mobile@1x.1346be3e.png");
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .imageone {
+    background-image: url("/vno-mobile@2x.3efbeb27.png");
+  }
+}
+@media screen and (min-width: 768px) {
+  .imageone {
+    width: 376px;
+    height: 269px;
+    position: relative;
+    top: 40px;
+    background-image: url("/vno-tablet@1x.99152a3c.png");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .imageone {
+    background-image: url("/vno-tablet@2x.9a3b7c20.png");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .imageone {
+    width: 842px;
+    height: 602px;
+    position: absolute;
+    top: 40px;
+    background-image: url("/vno-desktop@1x.15e6c116.png");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .imageone {
+    background-image: url("/vno-desktop@2x.f320ca1d.png");
   }
 }
 
@@ -1495,6 +1624,7 @@ button:hover {
   padding-left: 5px;
   background: #ffffff;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1), 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 768px) {
   .training-item {
@@ -1582,6 +1712,7 @@ button:hover {
   width: 45px;
   height: 49px;
   fill: #ff6b09;
+  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
 }
 .training-icon:hover, .training-icon:focus {
   fill: #ffffff;
@@ -1710,7 +1841,7 @@ button:hover {
     line-height: 34px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1316px) {
+@media screen and (min-width: 768px) and (min-width: 1314px) {
   .teacher {
     font-size: 46px;
     line-height: 60px;
@@ -1733,7 +1864,7 @@ button:hover {
     margin-left: 40px;
   }
 }
-@media screen and (min-width: 1316px) {
+@media screen and (min-width: 1314px) {
   .teacher-information {
     width: 642px;
     height: 660px;
@@ -1765,7 +1896,7 @@ button:hover {
   margin-bottom: 15px;
   border-top: 1px solid #b9b9b9;
 }
-@media screen and (min-width: 1316px) {
+@media screen and (min-width: 1314px) {
   .result-work {
     padding-top: 30px;
   }
@@ -1781,7 +1912,7 @@ button:hover {
   color: #111518;
   margin-bottom: 14px;
 }
-@media screen and (min-width: 1316px) {
+@media screen and (min-width: 1314px) {
   .teacher-achievement-item {
     font-size: 16px;
     line-height: 20px;
@@ -1803,7 +1934,7 @@ button:hover {
   background-size: contain;
   background-image: url(/check.766e11ba.svg);
 }
-@media screen and (min-width: 1316px) {
+@media screen and (min-width: 1314px) {
   .teacher-achievement-item::before {
     width: 25px;
     height: 20px;
@@ -1819,7 +1950,7 @@ button:hover {
 .about-teacher:not(:last-child) {
   margin-bottom: 14px;
 }
-@media screen and (min-width: 1316px) {
+@media screen and (min-width: 1314px) {
   .about-teacher {
     font-size: 18px;
     line-height: 28px;
@@ -1832,7 +1963,7 @@ button:hover {
   line-height: 20px;
   color: #ff6b09;
 }
-@media screen and (min-width: 1316px) {
+@media screen and (min-width: 1314px) {
   .certificate-link {
     font-size: 18px;
     line-height: 28px;
