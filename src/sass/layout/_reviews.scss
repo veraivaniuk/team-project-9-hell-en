@@ -243,7 +243,6 @@
   }
   @include for-size(tablet-only) {
     right: -3%;
-    top: 50%;
   }
 
   @include for-size(desktop) {
