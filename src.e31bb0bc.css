@@ -1261,7 +1261,7 @@ section.hero {
 }
 @media (min-width: 1314px) {
   section.hero {
-    background-position-y: 70px;
+    background-position-y: -90px;
     background-image: url(/Vector@1x.90d21cd2.png);
   }
 }
