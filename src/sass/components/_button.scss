@@ -37,7 +37,7 @@ button:hover {
 
 .button-consult {
   color: $accent-color;
-  background-color: $background-white-color;
+  background: rgba(17, 21, 24, 0.1);
   border: 2px solid $accent-color;
 
   transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1),
@@ -67,6 +67,7 @@ button:hover {
     height: 70px;
     width: 336px;
     padding-left: 24px;
+    background-color: $background-white-color;
 
     color: #ff6b09;
   }

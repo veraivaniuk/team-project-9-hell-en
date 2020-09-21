@@ -214,16 +214,14 @@
     width: 100%;
   }
 
-
   display: flex;
 
   @include for-size(mobile-only) {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
-
 
 .flex-hero {
   @include for-size(tablet-landscape) {
@@ -272,9 +270,9 @@ section.hero {
   background-image: url(../images/mobile/hero/heromobile.png);
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  background-image: url(../images/mobile/hero/heromobile@2x.png);
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/hero/heromobile@2x.png);
   }
 
   @include for-size(tablet-landscape) {
@@ -288,7 +286,7 @@ section.hero {
     }
   }
   @include for-size(desktop) {
-    background-position-y: -118px;
+    background-position-y: -90px;
     background-image: url(../images/desktop/hero/Vector@1x.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -298,7 +296,6 @@ section.hero {
     }
   }
 }
-
 
 .container-hero-fon {
   @include for-size(mobile-only) {
@@ -323,8 +320,6 @@ section.hero {
       background-image: url('../images/mobile/hero/vno-mobile@2x.png');
     }
   }
-
- 
 
   @media screen and (min-width: 768px) {
     width: 375px;
