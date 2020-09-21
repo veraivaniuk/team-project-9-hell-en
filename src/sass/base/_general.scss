@@ -17,13 +17,14 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
 }
-a {
+/*a {
   text-decoration: none;
-}
+}*/
 
 p {
   margin-top: 0px;
   margin-bottom: 0px;
+  overflow: hidden;
 }
 
 /*img {

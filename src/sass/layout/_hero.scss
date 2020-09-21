@@ -1,17 +1,35 @@
 .title-hero {
-  font-family: Montserrat;
-  font-style: normal;
+  @include for-size(mobile-only) {
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 50px;
+    margin-bottom: 27px;
+  }
+
+  @include for-size(tablet-landscape) {
+    font-size: 26px;
+    line-height: 34px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 58px;
+    line-height: 75px;
+    margin-top: 125px;
+    margin-bottom: 24px;
+  }
+
   font-weight: 800;
-  font-size: 20px;
-  line-height: 27px;
   letter-spacing: 0.03em;
   color: $main-text-color;
-  margin-bottom: 38px;
 }
 
 .grey-title {
-  font-family: Montserrat;
-  font-style: normal;
+  @include for-size(desktop) {
+    font-size: 20px;
+    line-height: 33px;
+  }
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
@@ -20,8 +38,16 @@
 }
 
 .black-title {
-  font-family: Montserrat;
-  font-style: normal;
+  @include for-size(tablet-landscape) {
+    width: 75%;
+  }
+
+  @include for-size(desktop) {
+    font-size: 20px;
+    line-height: 33px;
+    width: 100%;
+  }
+
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
@@ -30,8 +56,10 @@
 }
 
 .orang-title {
-  font-family: Montserrat;
-  font-style: normal;
+  @include for-size(desktop) {
+    font-size: 20px;
+    line-height: 33px;
+  }
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
@@ -40,31 +68,92 @@
 }
 
 .free-lesson {
-  margin-top: 39px;
-  margin-bottom: 60px;
- 
+  @include for-size(desktop) {
+    min-width: 354px;
+    min-height: 70px;
+    padding: 26px;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+    margin-top: 40px;
+    margin-bottom: 97px;
+  }
+
+  @include for-size(tablet-landscap) {
+    margin-bottom: 97px;
+  }
+
+  margin-top: 33px;
+  margin-bottom: 34px;
+  display: inline-block;
+  text-align: center;
+
+  min-width: 260px;
+  min-height: 48px;
+  padding: 17px 5px;
+
+  color: $white-text-color;
+  background-color: $accent-color;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1),
+    250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  color: $accent-color;
+  background-color: #ffffff;
 }
 
 .title-icon {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.08em;
-    color: #111518;
-    margin-left: 10px;
-    width: 50%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: $main-text-color;
+  margin-left: 10px;
+  width: 50%;
+
+  @include for-size(tablet-landscape) {
+    width: 75%;
+  }
+  @include for-size(desktop) {
+    font-size: 20px;
+    line-height: 33px;
+    /*margin-top: 18px;*/
+    margin-left: -18px;
+  }
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: $main-text-color;
+  margin-left: 10px;
+  width: 50%;
 }
 
-
-
 .conteiner-svg {
-    border: 2px solid $accent-color;
-    border-right: none;
-    width: 60px;
-    height: 60px;
-    position: relative;
+  @include for-size(desktop) {
+    width: 100px;
+    height: 102px;
+  }
+
+  border: 2px solid $accent-color;
+  border-right: none;
+  width: 60px;
+  height: 60px;
+  position: relative;
 }
 
 .conteiner-svg::after {
@@ -99,30 +188,133 @@
   margin: auto;
 }
 
+.stud {
+  @include for-size(desktop) {
+    width: 50px;
+    height: 58px;
+  }
+}
+
+.mob {
+  @include for-size(desktop) {
+    width: 56px;
+    height: 57px;
+  }
+}
+
+.doll {
+  @include for-size(desktop) {
+    width: 52px;
+    height: 58px;
+  }
+}
+
 .icon-box {
   display: flex;
-  margin-bottom: 30px;
-  margin-top: 78px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.flex-hero{
- display: flex; 
- flex-wrap: wrap;
- justify-content: space-between;
-}
- 
+.flex-hero {
+  @include for-size(tablet-landscape) {
+    display: flex;
+    align-items: center;
+  }
 
-
-.container-hero-fon{
-   position: relative;
-   left: 56px; 
-    
-
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.fon{
-   position: absolute; 
-   left: 20px;
-   right: 0px;
-   top: -10px;
+.fon {
+  position: absolute;
+  margin-left: 56px;
+  left: 0px;
+  right: 0px;
+  top: -10px;
+}
+
+.fon-one {
+  margin-left: 35px;
+}
+
+.icon-list {
+  margin-top: 50px;
+
+  @include for-size(tablet-landscape) {
+    margin-top: 30px;
+    display: flex;
+  }
+
+  @include for-size(desktop) {
+    margin-top: 192px;
+    margin-bottom: 47px;
+  }
+}
+
+section.hero {
+  position: relative;
+}
+
+/* 
+.container-hero {
+  margin-right: 55px;
+}
+ */
+
+.container-hero-fon {
+  @include for-size(mobile-only) {
+    position: relative;
+  }
+}
+
+.imageone {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/mobile/hero/vno-mobile@1x.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/hero/vno-mobile@2x.png');
+    }
+  }
+
+  width: 208px;
+  height: 148px;
+  display: block;
+  margin: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 376px;
+    height: 269px;
+    position: relative;
+    top: 40px;
+    background-image: url('../images/tablet/hero/vno-tablet@1x.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/hero/vno-tablet@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 842px;
+    height: 602px;
+    position: absolute;
+    top: 40px;
+
+    background-image: url('../images/desktop/hero/vno-desktop@1x.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/hero/vno-desktop@2x.png');
+    }
+  }
 }
