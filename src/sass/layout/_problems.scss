@@ -49,8 +49,7 @@
 .title-white.modified {
   font-family: 'Montserrat';
   font-style: normal;
-  margin: 0;
-  padding-bottom: 27px;
+  margin-bottom: 27px;
 
   @include for-size(tablet-landscape) {
     display: block;
@@ -96,7 +95,7 @@
   //left: 20px;
   //right: 20px;
   //z-index: 2;
-  width: calc (100% - 40);
+  /*width: calc (100% - 40);*/
   //height: 488px;
   padding-top: 20px;
   padding-right: 14px;
@@ -109,7 +108,7 @@
     //top: 188px;
     //left: 40px;
     //right: 40px;
-    width: calc (100% - 80);
+    /*width: calc (100% - 80);*/
     padding: 0;
   }
 
@@ -117,7 +116,7 @@
     //top: 348px;
     //left: 40px;
     //right: 40px;
-    width: calc (100% - 366);
+    /*width: calc (100% - 366);*/
   }
 }
 
