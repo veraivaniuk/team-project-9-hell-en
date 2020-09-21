@@ -37,7 +37,7 @@ button:hover {
 
 .button-consult {
   color: $accent-color;
-  background: rgba(17, 21, 24, 0.1);
+  background: transparent;
   border: 2px solid $accent-color;
 
   transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1),
