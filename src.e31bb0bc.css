@@ -87,7 +87,7 @@ button:hover {
 
 .button-consult {
   color: #ff6b09;
-  background: rgba(17, 21, 24, 0.1);
+  background: transparent;
   border: 2px solid #ff6b09;
   transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1), 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
