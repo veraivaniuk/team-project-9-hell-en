@@ -47,21 +47,12 @@
 
 .registration {
     text-align: center;
-    @include for-size(mobile-only) {
-        padding-bottom: 50px;
-    }
-
-    @include for-size(tablet-only) {
+    @include for-size(tablet-landscape) {
         padding-top: 50px;
     }
     
-    @include for-size(tablet-landscape) {
-        padding-bottom: 70px;
-    }
-
     @include for-size(desktop) {
         padding-top: 100px;
-        padding-bottom: 60px;
     }
 }
 
