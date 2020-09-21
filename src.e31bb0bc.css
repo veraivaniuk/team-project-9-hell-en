@@ -704,7 +704,7 @@ button:hover {
   .program.list.line::before {
     height: 0;
     width: 100vw;
-    left: calc((1236px / 2) - 50vw);
+    left: calc((1314px / 2) - 50vw);
     top: -45px;
   }
 }
